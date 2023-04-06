@@ -9,15 +9,6 @@
         </span>
     </div>
     <div class="header-bottom">
-{{--        <div class="header-notification">--}}
-{{--            @foreach (get_notification() as $notification)--}}
-{{--                @foreach($notification['message'] as $msg)--}}
-{{--                    <div style="color: {{$notification['type']}};margin-right: 320px" class="client-message">--}}
-{{--                        <h3>{{$msg}}</h3>--}}
-{{--                    </div>--}}
-{{--                @endforeach--}}
-{{--            @endforeach--}}
-{{--        </div>--}}
         <ul class="header-bottom__list">
             @if(isset($_SESSION['user']) && $_SESSION['user']->role == 1)
             <li class="header-bottom__item header-bottom__item--separate">
@@ -196,7 +187,7 @@
                                 @foreach($menuHome as $category1)
                                     @if($category1->parent_id == $category->id)
                                         <li class="header-main-menu__item">
-                                            <a href="{{BASE_URL}}home-collections/{{$category1->id}}"
+                                            <a href="{{BASE_URL}}collections/{{$category1->id}}"
                                                class="header-main-menu__link header-main-menu--parent">{{$category1->name}}</a>
                                         </li>
                                     @endif

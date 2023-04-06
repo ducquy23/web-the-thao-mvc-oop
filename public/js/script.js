@@ -116,5 +116,24 @@ $(document).ready(function () {
         prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
     });
-
+    const listColors = $(".main-info-product__color-item");
+    const listSizes = $(".main-info-product__size-item");
+    listColors.each(function (index,value) {
+            $(value).on('click', function (item) {
+                const checkClass = $(".main-info-product__color-item").hasClass('main-info-product__color-item--active');
+                if(checkClass) {
+                    $(".main-info-product__color-item").removeClass('main-info-product__color-item--active');
+                }
+                $(this).addClass('main-info-product__color-item--active');
+            });
+    });
+    listSizes.each(function (index,value) {
+        $(value).on('click', function (item) {
+            const checkClass = $(".main-info-product__size-item").hasClass('main-info-product__size-item--active');
+            if(checkClass) {
+                $(".main-info-product__size-item").removeClass('main-info-product__size-item--active');
+            }
+            $(this).addClass('main-info-product__size-item--active');
+        });
+    });
 });

@@ -6,4 +6,9 @@ class HomeCollection extends BaseModel {
         $this->setQuery($sql);
         return $this->loadAllRows([$id]);
     }
+    public function getNameParent($id) {
+        $sql = "SELECT name FROM tb_categories WHERE id = ?";
+        $this->setQuery($sql);
+        return $this->loadRow([$id]);
+    }
 }

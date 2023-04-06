@@ -13,7 +13,8 @@ class HomeCollectionController extends BaseController {
     public function index($id) {
         $menuHome = $this->home->showMenuHomeClient();
         $listProduct = $this->homeCollection->getProductByCategoryId($id);
-        return $this->render('home-collections.index',compact('menuHome','listProduct'));
+        $nameCategory = $this->homeCollection->getNameParent($id);
+        return $this->render('home-collections.index',compact('menuHome','listProduct','nameCategory'));
     }
 
 }

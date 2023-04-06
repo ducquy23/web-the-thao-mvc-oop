@@ -4,20 +4,17 @@
 <div class="main-top">
     <p class="main-top__title">
         <a href="{{ route('') }}" class="main-top__title-link">Trang chủ</a>
-        <span class="main-top__category">Giày đá bóng nam</span>
+        <span class="main-top__category">{{ $nameCategory->name }}</span>
     </p>
 </div>
 <div class="main-container">
     <div class="main-container__header">
-        <h1 class="main-container__heading">Giày Đá Bóng Nam</h1>
+        <h2 class="main-container__heading">{{ $nameCategory->name }} </h2>
     </div>
     <div class="main-container__list">
         <ul class="main-container__list-item">
-            <li class="main-container__item">DANH MỤC<i class='bx bx-chevron-down'></i></li>
             <li class="main-container__item">THƯƠNG HIỆU<i class='bx bx-chevron-down'></i></li>
             <li class="main-container__item">GIÁ SẢN PHẨM<i class='bx bx-chevron-down'></i></li>
-            <li class="main-container__item">MÀU SẮC<i class='bx bx-chevron-down'></i></li>
-            <li class="main-container__item">KÍCH THƯỚC<i class='bx bx-chevron-down'></i></li>
         </ul>
         <select class="main-container__option">
             <option value="" selected><a href="" class="main-container__option-link">Sản phẩm nổi bật<i class='bx bx-chevron-down'></i></a></option>

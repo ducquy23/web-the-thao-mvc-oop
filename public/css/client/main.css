@@ -1303,7 +1303,7 @@ body {
     padding: 0 10px;
 }
 .main-info-product__color-item--active {
-    border: 1px solid #000;
+    border: 2px solid #b02b2b;
 }
 .main-info-product__size {
     display: flex;
@@ -1329,7 +1329,7 @@ body {
     font-weight: bold;
 }
 .main-info-product__size-item--active {
-    border: 1px solid #000;
+    border: 2px solid #6a1e1e;
 }
 .main-info-product__action {
     margin-top: 20px;

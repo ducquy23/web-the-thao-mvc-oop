@@ -75,7 +75,7 @@ $router->get('remove-product-color/{id}/{id_pro}',[App\Controllers\ProductContro
 /*
  * * Handler Module HomeCollection
  */
-$router->get('home-collections/{id}',[App\Controllers\HomeCollectionController::class,'index']);
+$router->get('collections/{id}',[App\Controllers\HomeCollectionController::class,'index']);
 /*
  * * Handler Module Login,logout,register
 */

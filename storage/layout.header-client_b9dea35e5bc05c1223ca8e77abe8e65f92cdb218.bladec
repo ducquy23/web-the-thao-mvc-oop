@@ -9,17 +9,6 @@
  </span>
  </div>
  <div class="header-bottom">
-<?php /*        <div class="header-notification">*/ ?>
-<?php /*            <?php $__currentLoopData = get_notification(); $this->addLoop($__currentLoopData);$this->getFirstLoop();
- foreach($__currentLoopData as $notification): $loop = $this->incrementLoopIndices();  ?>*/ ?>
-<?php /*                <?php $__currentLoopData = $notification['message']; $this->addLoop($__currentLoopData);$this->getFirstLoop();
- foreach($__currentLoopData as $msg): $loop = $this->incrementLoopIndices();  ?>*/ ?>
-<?php /*                    <div style="color: <?php echo \htmlentities($notification['type']??'', ENT_QUOTES, 'UTF-8', false); ?>;margin-right: 320px" class="client-message">*/ ?>
-<?php /*                        <h3><?php echo \htmlentities($msg??'', ENT_QUOTES, 'UTF-8', false); ?></h3>*/ ?>
-<?php /*                    </div>*/ ?>
-<?php /*                <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>*/ ?>
-<?php /*            <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>*/ ?>
-<?php /*        </div>*/ ?>
  <ul class="header-bottom__list">
  <?php if(isset($_SESSION['user']) && $_SESSION['user']->role == 1): ?>
  <li class="header-bottom__item header-bottom__item--separate">
@@ -200,7 +189,7 @@
  foreach($__currentLoopData as $category1): $loop = $this->incrementLoopIndices();  ?>
  <?php if($category1->parent_id == $category->id): ?>
  <li class="header-main-menu__item">
- <a href="<?php echo \htmlentities(BASE_URL??'', ENT_QUOTES, 'UTF-8', false); ?>home-collections/<?php echo \htmlentities($category1->id??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ <a href="<?php echo \htmlentities(BASE_URL??'', ENT_QUOTES, 'UTF-8', false); ?>collections/<?php echo \htmlentities($category1->id??'', ENT_QUOTES, 'UTF-8', false); ?>"
  class="header-main-menu__link header-main-menu--parent"><?php echo \htmlentities($category1->name??'', ENT_QUOTES, 'UTF-8', false); ?></a>
  </li>
  <?php endif; ?>

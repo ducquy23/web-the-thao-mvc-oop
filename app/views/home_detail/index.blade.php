@@ -29,8 +29,8 @@
                 <p class="main-info-product__color-name">Màu sắc:</p>
                 <ul class="main-info-product__color-list">
                     @foreach($colors as $color)
-                    <li class="main-info-product__color-item main-info-product__color-item--active">
-                        <a href="" class="main-info-product__color-link" style="background-color: {{$color->hex_code}};"></a>
+                    <li class="main-info-product__color-item">
+                        <a href="#" class="main-info-product__color-link" style="background-color: {{$color->hex_code}};"></a>
                     </li>
                     @endforeach
 
@@ -39,9 +39,10 @@
             <div class="main-info-product__size">
                 <p class="main-info-product__size-name">Kích thước:</p>
                 <ul class="main-info-product__size-list">
-
-                    <li class="main-info-product__size-item main-info-product__size-item--active">M</li>
-
+                    <li class="main-info-product__size-item main-info-product__size-item--active">S</li>
+                    <li class="main-info-product__size-item">M</li>
+                    <li class="main-info-product__size-item">L</li>
+                    <li class="main-info-product__size-item">XL</li>
                 </ul>
             </div>
             <!-- <form action=""> -->
