@@ -1,0 +1,148 @@
+:root {
+    --gray-color: #4A4A4A;
+    --white-color:#ffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wapper {
+    background-color: var(--white-color);
+}
+/*  side-bar */
+.side-bar {
+    background-color: var(--gray-color);
+    height: 100vh;
+    width: 18%;
+    position: fixed;
+}
+.side-bar__logo {
+    margin-top: 28px;
+    margin-bottom: 60px;
+}
+.side-bar__logo-img {
+    margin-top: 28px;
+    margin-bottom: 60px;
+}
+.side-bar__list {
+    margin-left: 20px;
+}
+.side-bar__item {
+    width: 90%;
+    background-color: var(--white-color);
+    margin: 20px 0;
+    padding: 7px;
+    list-style: none;
+    border-radius: 5px;
+}
+.side-bar__item:hover {
+    background-color: #cdcdcd;
+}
+.side-bar__link:hover {
+    text-decoration: none;
+}
+.side-bar__item-name  {
+    color: #000000;
+    margin-left: 5px;
+}
+
+/*  main-content */
+.main-content {
+    width: 82%;
+    margin-left: 18%;
+}
+/* header */
+.header {
+    height: 65px;
+    border-bottom: 2px solid #CBD5E0;
+    display: flex;
+    justify-content: right;
+}
+.header-notification {
+    width: 550px;
+    margin-right: 130px;
+    margin-top: 5px;
+}
+.header-info {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+.header-info__text {
+    margin: 0 18px;
+}
+.header-info__text-hello {
+    color: #8D8D8D;
+}
+.header-info__text-name {
+    color: #0066B2;
+}
+.main {
+    padding: 0 20px;
+    padding-bottom: 30px;
+}
+.main-banner-function {
+    margin-top: 10px;
+    height: 60px;
+    border-bottom: 2px solid #cdcdcd;
+}
+.main-list {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.main-list-action {
+    display: flex;
+    align-items: center;
+}
+.main-list-action__search > form > button {
+    border: none;
+}
+.main-list-action__search > form > input {
+    margin: 0 10px;
+    padding: 4px;
+    border: none;
+    outline: none;
+    width: 250px;
+}
+.main-table {
+    margin-top: 20px;
+}
+.page-link {
+    color: black;
+}
+.main-header__title {
+    margin: 20px 0;
+}
+.block-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.box-image-block {
+    position: relative;
+}
+.btn-delete-image {
+    position: absolute;
+    margin-left: -82px;
+    margin-top: 24px;
+}
+.form-group-color-box {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.form-group-color {
+    margin: 10px 0;
+}
+.form-color {
+    padding: 3px 14px;
+    border-radius: 50%;
+    margin: 0 20px;
+    border: 1px solid black;
+}
+.form-input-check-box {
+    border: 1px solid #CCC;
+}
