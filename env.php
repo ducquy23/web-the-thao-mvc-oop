@@ -7,7 +7,7 @@ const DBCHARSET = "utf8";
 const DBHOST = "127.0.0.1";
 date_default_timezone_set("Asia/Ho_Chi_Minh");
 
-const BASE_URL = 'http://localhost/dong_luc_shop/';
+const BASE_URL = 'http://localhost/web-the-thao-mvc-oop/';
 function route($name) {
     return BASE_URL . $name;
 }
